@@ -1,0 +1,64 @@
+:root {
+  --color-1: #3c1874;
+  --color-primary-2: #7f5900;
+  --color-primary-1: #ffb300;
+  --color-secondary-2: #7a431d;
+  --color-secondary-1: #de9e48;
+  --color-background-1: #563727;
+  --color-background-2: #372c2e;
+  --color-white-1: #f1ffff;
+  --color-white-2: #bac2c2;
+  --color-black-1: #000000;
+  --color-black-3: #424242;
+  --color-black-2: #121212;
+}
+
+body {
+  /* background from https://www.toptal.com/designers/subtlepatterns/page/14/ */
+  background: #cfcfe6 url("../images/unnamed.jpg");
+  background-size: auto 300px;
+  color: var(--color-white-1);
+  font-family: "Archivo", "Cairo", sans-serif;
+}
+
+/* overflow scroll bar style from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar2 */
+/* width */
+body ::-webkit-scrollbar {
+  width: 8px;
+}
+
+/*  Track */
+body ::-webkit-scrollbar-track {
+  background-color: var(--color-primary-2);
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Handle */
+body ::-webkit-scrollbar-thumb {
+  background: var(--color-primary-1);
+  border-radius: 4px;
+}
+/* Handle on hover */
+body ::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary-1);
+}
+
+.color {
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+}
+
+.paintingViewText {
+  display: inline-block;
+  justify-content: right;
+}
+
+.paintingView {
+  display: inline-block;
+  justify-content: left;
+}
